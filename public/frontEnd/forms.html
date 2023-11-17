@@ -1,0 +1,45 @@
+<head>
+<link rel="stylesheet" href="css/styling.css" type="text/css">
+<!------ Include the above in your HEAD tag ---------->
+</head>
+<script>
+  function close_window(){
+    if(confirm("Close Window?"))
+    {
+    close();
+  }
+}
+</script>
+<body>
+<section class="get-in-touch">
+   <h1 class="title">Personal Details</h1>
+   <form class="contact-form row" onsubmit="func()">
+      <div class="form-field col-lg-6">
+         <input id="name" class="input-text js-input" type="text" >
+         <label class="label" for="name">Name</label>
+      </div>
+      <div class="form-field col-lg-6 ">
+         <input id="event_name" class="input-text js-input" type="text" >
+         <label class="label" for="email">Event Name</label>
+      </div>
+      <div class="form-field col-lg-6 ">
+         <input id="email" class="input-text js-input" type="email" >
+         <label class="label" for="company">E-mail</label>
+      </div>
+       <div class="form-field col-lg-6 ">
+         <input id="phone" class="input-text js-input" type="tel" >
+         <label class="label" for="phone">Contact Number</label>
+      </div>
+      <div class="form-field col-lg-12">
+         <input id="club" class="input-text js-input" type="text" >
+         <label class="label" for="message">Party Organising The Event</label>
+      </div>
+      <div class="form-field col-lg-12">
+         <input class="submit-btn" type="submit" value="Submit" onclick="close_window()">
+      </div>
+   </form>
+
+   <script type="text/javascript" src="js/form.js"></script>
+   <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+</section>
+</body>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Hotel Template">
+    <meta name="keywords" content="Hotel, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PESU HALL BOOKING SYSTEM</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/flaticon.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/styling.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header-section">
+        <div class="container-fluid">
+            <div class="inner-header">
+                <div class="logo">
+                    <a href="./index.html"><img src="PESLogo.jpg" height="75" width="150"alt="" style="border-radius:20px"></a>
+                </div>
+                <nav class="main-menu mobile-menu">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="rooms.html">Rooms</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div id="mobile-menu-wrap"></div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Area Section Begin -->
+      <div>
+         <section class="get-in-touch">
+            <h1> </h1>
+            <br><br><br><br><br><br>
+            <h1 class="title">Event Details</h1>
+         <form class="contact-form row" onsubmit="func()">
+            <div class="form-field col-lg-6">
+               <input id="name" class="input-text js-input" type="text" >
+               <label class="label" for="name">Name</label>
+            </div>
+            <div class="form-field col-lg-6">
+               <input id="event_name" class="input-text js-input" type="text" >
+               <label class="label" for="name">Event name</label>
+            </div>
+            <div class="form-field col-lg-6">
+               <input id="time" class="input-text js-input" type="text" >
+               <label class="label" for="message">Timings</label>
+            </div>
+            <div class="form-field col-lg-6 ">
+               <input id="nature" class="input-text js-input" type="text" >
+               <label class="label" for="email">Nature of the Event </label>
+            </div>
+            <div class="form-field col-lg-6 ">
+               <input id="email" class="input-text js-input" type="email" >
+               <label class="label" for="company">E-mail</label>
+            </div>
+             <div class="form-field col-lg-6 ">
+               <input id="phone" class="input-text js-input" type="tel" >
+               <label class="label" for="phone">Contact Number</label>
+            </div>
+            <div class="form-field col-lg-12">
+               <input id="club" class="input-text js-input" type="text" >
+               <label class="label" for="message">Party Organising The Event</label>
+            </div>
+            <div class="form-field col-lg-12">
+               <input id="others" class="input-text js-input" type="text" >
+               <label class="label" for="message">Others</label>
+            </div>
+            <div class="form-field col-lg-12">
+               <input class="submit-btn" type="submit" value="Submit" onclick="close_window()">
+            </div>
+      
+         </form>
+      </section>
+      </div>
+    <!-- Hero Area Section End -->
+
+
+        <!-- Footer Section Begin -->
+        <footer class="footer-section">
+         <div class="container">
+             <div class="row">
+                 <div class="col-lg-4">
+                     <div class="footer-item">
+                         <div class="footer-logo">
+                             <a href="#"><img src="PESLogo.jpg" height="120px" width="240px"alt=""></a>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="col-lg-4">
+                     <div class="footer-item">
+                         <h5>Newsletter</h5>
+                         <div class="newslatter-form">
+                             <input type="text" placeholder="Your Email Here">
+                             <button type="submit">Subscribe</button>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="col-lg-4">
+                     <div class="footer-item">
+                         <h5>Contact Info</h5>
+                         <ul>
+                             <li>PES UNIVERSITY, RR CAMPUS<br />BENGALURU, KARNATAKA</li>
+                             <li>PES@GMAIL.COM</li>
+                         </ul>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <div class="copyright">
+             <div class="container">
+                 <div class="row">
+                     <div class="col-lg-12">
+                         <ul>
+                             <li><a href="./index.html">Home</a></li>
+                             <li><a href="rooms.html">Rooms</a></li>
+                             <li ><a href="./contact.html">Contact</a></li>
+                         </ul>
+                     </div>
+                 </div>
+     </footer>
+         <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script type="text/javascript" src="js/form.js"></script>
+    <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="main1.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+<!--
+<head>
+<link rel="stylesheet" href="css/styling.css" type="text/css">
+</head>
+<script>
+  function close_window(){
+    if(confirm("Close Window?"))
+    {
+    close();
+  }
+}
+</script>
+<div>
+   <section class="get-in-touch">
+   <h1 class="title">Personal Details</h1>
+   <form class="contact-form row" onsubmit="func()">
+      <div class="form-field col-lg-6">
+         <input id="name" class="input-text js-input" type="text" >
+         <label class="label" for="name">Name</label>
+      </div>
+      <div class="form-field col-lg-6">
+         <input id="event_name" class="input-text js-input" type="text" >
+         <label class="label" for="name">Event name</label>
+      </div>
+      <div class="form-field col-lg-12">
+         <input id="time" class="input-text js-input" type="text" >
+         <label class="label" for="message">Timings</label>
+      </div>
+      <div class="form-field col-lg-6 ">
+         <input id="nature" class="input-text js-input" type="text" >
+         <label class="label" for="email">Nature of the Event </label>
+      </div>
+      <div class="form-field col-lg-6 ">
+         <input id="email" class="input-text js-input" type="email" >
+         <label class="label" for="company">E-mail</label>
+      </div>
+       <div class="form-field col-lg-6 ">
+         <input id="phone" class="input-text js-input" type="tel" >
+         <label class="label" for="phone">Contact Number</label>
+      </div>
+      <div class="form-field col-lg-12">
+         <input id="club" class="input-text js-input" type="text" >
+         <label class="label" for="message">Party Organising The Event</label>
+      </div>
+      <div class="form-field col-lg-12">
+         <input id="others" class="input-text js-input" type="text" >
+         <label class="label" for="message">Others</label>
+      </div>
+      <div class="form-field col-lg-12">
+         <input class="submit-btn" type="submit" value="Submit" onclick="close_window()">
+      </div>
+
+   </form>
+
+   <script type="text/javascript" src="js/form.js"></script>
+   <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+   <script src="js/jquery.magnific-popup.min.js"></script>
+</section>
+</div>
+-->

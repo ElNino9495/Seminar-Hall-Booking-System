@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Club Event Registration</title>
+    <link rel="stylesheet" href="">
+  </head>
+  <style>
+    .table_div{
+       width: 75%;
+       padding: 10px;
+        margin: auto
+    }
+
+    .loc_tab{
+        width: 35%;
+        margin-left: 12.5%;
+        table-layout: fixed;
+        border-collapse: collapse;
+        
+    }
+
+    table,td,th{
+        border: 1px solid black;
+        border-collapse: collapse;
+        table-layout: fixed;
+        font-size:large;
+    }
+    th{
+        text-align: center;
+        font-weight: bold;
+    }
+
+  </style>
+  <body>
+    <h2 align = "center">PES UNIVERSITY</h2>
+    <br>
+    <h2 align = "center">PROFORMA FOR BOOKING OF AUDITORIUM/SEMINAR HALL/PESU52</h2>
+    <div class="table_div" align="center">
+        <table align = "center">
+            <tr>
+                <td style="width: 2%">1.</td>
+                <td style = "width: 35%">Name and Address Of Individual/Organisation in whose name auditorium is to be booked</td>
+                <td style="width: 2%">:</td>
+                <td style="width: 61%">{{users.name}}</td>
+            </tr>
+            <tr>
+                <td style="width: 2%">2.</td>
+                <td style = "width: 35%">Telephone/Mobile No. & Email Address</td>
+                <td style="width: 2%">:</td>
+                <td style="width: 61%">{{users.phone_gmail}}</td>
+            </tr>
+            <tr>
+                <td style="width: 2%">3.</td>
+                <td style = "width: 35%">Nature of the Organisation/&#13;&#10; Party(Trust/Academic/Company/&#13;&#10;Govt.Institution/Private/Others)(Please Mention)</td>
+                <td style="width: 2%">:</td>
+                <td style="width: 61%">{{users.org_nature}}</td>
+            </tr>
+            <tr>
+                <td style="width: 2%">4.</td>
+                <td style = "width: 35%">Nature of Program&#13;&#10;(Cultural/Seminar/Meeting/Others)&#13;&#10;(Please Mention)</td>
+                <td style="width: 2%">:</td>
+                <td style="width: 61%">{{users.event_nature}}</td>
+            </tr>
+            <tr>
+                <td style="width: 2%">5.</td>
+                <td style = "width: 35%">Names of the Chief and other Guest/Speakers</td>
+                <td style="width: 2%">:</td>
+                <td style="width: 61%">{{users.chief_guest}}</td>
+            </tr>
+            <tr>
+                <td style="width: 2%">6.</td>
+                <td style = "width: 35%">Nature of the Participants(Public/Employess/&#13;&#10;Academics/Others)(Please Mention)</td>
+                <td style="width: 2%">:</td>
+                <td style="width: 61%">{{users.nature_participants}}</td>
+            </tr>
+            <tr>
+                <td style="width: 2%">7.</td>
+                <td style = "width: 35%">Expected No. of Participants</td>
+                <td style="width: 2%">:</td>
+                <td style="width: 61%">{{users.num_participants}}</td>
+            </tr>
+            <tr>
+                <td style="width: 2%">8.</td>
+                <td style = "width: 35%">Wether Lunch/Dinner will be provided for&#13;&#10; participant or not</td>
+                <td style="width: 2%">:</td>
+                <td style="width: 61%">{{users.meals}}</td>
+            </tr>
+            <tr>
+                <td style="width: 2%">9.</td>
+                <td style = "width: 35%">Event Venue</td>
+                <td style="width: 2%">:</td>
+                <td style="width: 61%">{{users.ticket}}</td>
+            </tr>
+            <tr>
+                <td style="width: 2%">10.</td>
+                <td style = "width: 35%">Date on which auditorium/Seminar is &#13;&#10;required</td>
+                <td style="width: 2%">:</td>
+                <td style="width: 61%">{{users.date}}</td>
+            </tr>
+            <tr>
+                <td style="width: 2%">11.</td>
+                <td style = "width: 35%">Timmings:</td>
+                <td style="width: 2%">:</td>
+                <td style="width: 61%">{{users.timmings}}</td>
+            </tr>
+            <tr>
+                <td style="width: 2%">12.</td>
+                <td style = "width: 35%">Others(Please mention any special faciltiy&#13;&#10;required)</td>
+                <td style="width: 2%">:</td>
+                <td style="width: 61%">{{users.others}}</td>
+            </tr>
+
+        </table>
+    </div>
+    <br>
+    <div align="left">
+        <table class="loc_tab">
+            <tr>
+                <th style="width: 60%">Location</th>
+                <th style="width: 20%">Capacity</th>
+                <th style="width: 20%">Booked</th>
+            </tr>
+            <tr>
+                <td>MRD Auditorium</td>
+                <td>1200</td>
+                <td>{{users.venue_tick1}}</td>
+            </tr>
+            <tr>
+                <td>Techpark Seminar Hall</td>
+                <td>230</td>
+                <td>{{users.venue_tick3}}</td>
+            </tr>
+            <tr>
+                <td>PESU52 Hackroom</td>
+                <td>150</td>
+                <td>{{users.venue_tick2}}</td>
+            </tr>            
+        </table>
+    </div>
+    
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Index.html from Public folder</h1>
+    <form action="" id="submit_form">
+      <label for="">Name</label>
+      <input type="text" id="name" />
+      <br /><br />
+      <label for="">Email</label>
+      <input type="text" id="email" />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+  <script>
+    $(document).ready(function () {
+      $("form").submit(function (e) {
+        e.preventDefault();
+        const name = $("#name").val();
+        const email = $("#email").val();
+        console.log(name,email);
+        $.ajax({
+          type: "POST",
+          url: "http://127.0.0.1:5000/reg",
+          data: { 'name': name, 'email': email },
+          crossDomain: true,
+          success: function (resultData) {
+            console.log("success");
+            console.log(resultData);
+          },
+          error: (result) => {
+            console.log("error");
+            console.log(result);
+          },
+        });
+      });
+    });
+  </script>
+</html>

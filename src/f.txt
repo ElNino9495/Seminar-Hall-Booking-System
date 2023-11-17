@@ -1,0 +1,45 @@
+const date_valid = function (old_date, old_selection,new_date) {
+  if(old_selection == '24' || old_selection == '12')
+  {
+    if()
+  }
+};
+
+<form class="contact-form row" onsubmit="func()">
+      <div class="form-field col-lg-6">
+         <input id="name" class="input-text js-input" type="text" >
+         <label class="label" for="name">Name</label>
+      </div>
+      <div class="form-field col-lg-6">
+         <input id="event_name" class="input-text js-input" type="text" >
+         <label class="label" for="name">Event name</label>
+      </div>
+      <div class="form-field col-lg-12">
+         <input id="time" class="input-text js-input" type="text" >
+         <label class="label" for="message">Timings</label>
+      </div>
+      <div class="form-field col-lg-6 ">
+         <input id="nature" class="input-text js-input" type="text" >
+         <label class="label" for="email">Nature of the Event </label>
+      </div>
+      <div class="form-field col-lg-6 ">
+         <input id="email" class="input-text js-input" type="email" >
+         <label class="label" for="company">E-mail</label>
+      </div>
+       <div class="form-field col-lg-6 ">
+         <input id="phone" class="input-text js-input" type="tel" >
+         <label class="label" for="phone">Contact Number</label>
+      </div>
+      <div class="form-field col-lg-12">
+         <input id="club" class="input-text js-input" type="text" >
+         <label class="label" for="message">Party Organising The Event</label>
+      </div>
+      <div class="form-field col-lg-12">
+         <input id="others" class="input-text js-input" type="text" >
+         <label class="label" for="message">Others</label>
+      </div>
+      <div class="form-field col-lg-12">
+         <input class="submit-btn" type="submit" value="Submit" onclick="close_window()">
+      </div>
+
+   </form>
