@@ -24,9 +24,6 @@ The Conference Room Booking System streamlines the efficient booking of seminar 
 
 ### Contributors
 - Rohit P Suresh
-- Rohan Lall
-- Samarth S Rao
-- Saarth Vardhan
 
 
 ### Feedback and Issues
